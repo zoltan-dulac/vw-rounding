@@ -1,0 +1,39 @@
+/* line 3, ../sass/test.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 6, ../sass/test.scss */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 11, ../sass/test.scss */
+.container {
+  width: 100%;
+  max-width: 1024px;
+}
+/* line 15, ../sass/test.scss */
+.container .item {
+  transform: translateZ(0);
+  width: 33%;
+  height: 23vw;
+  max-height: 238.93333px;
+  float: left;
+  background-color: black;
+  overflow: hidden;
+}
+/* line 24, ../sass/test.scss */
+.container .item.double-height {
+  height: 46vw;
+  max-height: 477.86667px;
+}
+/* line 29, ../sass/test.scss */
+.container .item:last-child {
+  clear: both;
+}
+/* line 33, ../sass/test.scss */
+.container .item img {
+  width: 100%;
+}

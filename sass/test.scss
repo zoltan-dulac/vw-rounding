@@ -1,0 +1,37 @@
+$aspect-ratio: 0.7;
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1024px;
+  
+  .item {
+    transform: translateZ(0);
+    width: 33%;
+    height: floor(33vw * $aspect-ratio);
+    max-height: ((1024px / 3) * $aspect-ratio);
+    float: left;
+    background-color: black;
+    overflow: hidden;
+    
+    &.double-height {
+      height: floor(33vw * $aspect-ratio) * 2;
+      max-height: (((1024px / 3) * $aspect-ratio) * 2); 
+    }
+    
+    &:last-child {
+      clear: both;
+    }
+    
+    img {
+      width: 100%;
+    }
+  }
+}
